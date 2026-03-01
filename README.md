@@ -78,16 +78,9 @@ AgentsCourtMCP/
    pip install -r requirements.txt
    ```
 
-3. **Configure credentials:**
-   Edit `config.py` and set:
-   - `AZURE_OPENAI_API_KEY` – Your Azure OpenAI API key
-   - `AZURE_OPENAI_DEPLOYMENT` – Your deployment name
-   - `TAVILY_API_KEY` – Your Tavily API key for search tools
-   - Other configuration as needed (model, base URL, etc.)
-
 ## Usage
 
-### Streamlit UI (Recommended)
+### Streamlit UI
 
 Run the interactive web interface:
 
@@ -138,23 +131,6 @@ Agents can call two search tools via the Model Context Protocol:
 - **search_reddit** – Community opinions and discussions
 - **search_wikipedia** – Factual background and encyclopedic knowledge
 
-## Configuration
-
-Edit `config.py` to customize:
-
-```python
-# Azure OpenAI
-AZURE_OPENAI_API_KEY = "your-key-here"
-AZURE_OPENAI_DEPLOYMENT = "your-deployment-name"
-AZURE_OPENAI_BASE_URL = "https://your-resource.openai.azure.com/"
-
-# Tavily (search)
-TAVILY_API_KEY = "your-tavily-key-here"
-
-# Model settings
-MODEL_NAME = "gpt-4o-mini"  # or your preferred model
-```
-
 ## Prompts
 
 All agent system prompts are defined in `core/prompts.py`:
@@ -168,7 +144,11 @@ Modify these prompts to adjust agent behavior, tone, or reasoning style.
 ## Future Developments
 
 - Adding new search tools
-- Full MCP integration 
+- Full MCP integration
+
+## Where Copilot Helped
+-  Copilot allowed us to speed up development time greatly. A project that wouldve likely taken weeks without it took days instead. An example of a tedious task Copilot was able to speed up was when we wanted to change the agents names at the end of our project. Normally that would be a boring tedious tasks that would take a while because we would have to go through every file and make sure every name is changed correctly. However, Copilot was able to compelte this tedious task for us in seconds.
+-  Copilot helped us brainstorm ideas for this project. For example, we asked Copilot advice on file structure to hear other opinions on how the project can be as maintainable as possible.
 
 ## License
 
