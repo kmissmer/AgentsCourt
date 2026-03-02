@@ -2,7 +2,7 @@
 Core orchestration for the Agents Court debate system.
 
 This module exports the `run_debate` function which executes a full
-round of the debate: Kaleb takes the first option, Alan takes the second,
+round of the debate: Marcus takes the first option, Colton takes the second,
 and the judge issues a verdict.  Other parts of the application (Streamlit UI,
 CLI tools, tests, etc.) should import from here rather than the
 legacy script.
@@ -15,7 +15,7 @@ from core.models import Argument
 
 
 def run_debate(topic: str, context: str = "") -> dict:
-    """Run a full debate cycle: Kaleb -> Alan -> Judge.
+    """Run a full debate cycle: Marcus -> Colton -> Judge.
 
     Args:
         topic:   The proposition being debated (typically two options)
